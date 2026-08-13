@@ -1,0 +1,60 @@
+{
+  "summary": "Highly analytical data analyst with experience in data analysis, SQL, and Python, seeking to join the BI team at Acme Corp.",
+  "experience": [
+    {
+      "title": "Global Risk Intelligence and Technology Co-op",
+      "company": "Manulife",
+      "location": "Toronto, ON",
+      "dates": "January 2026 -- April 2026",
+      "bullets": [
+        "Recommended a prioritization framework for automation use cases, ranking initiatives by effort-to-impact ratio and designing a reusable AI agent capability architecture that cut solution complexity by 75% across 20 capabilities.",
+        "Automated Excel-based workflows using Python (Pandas, OpenPyXL) across 56 files, saving 170-220 hours per week and eliminating repetitive manual effort."
+      ]
+    },
+    {
+      "title": "Data Analytics Intern",
+      "company": "Northeastern University (ADISC)",
+      "location": "Toronto, ON",
+      "dates": "July 2025 -- January 2026",
+      "bullets": [
+        "Contributed to a Northeastern research team partnered with the City of Toronto's Transportation Services to analyze mobility patterns for major recurring events.",
+        "Analyzed public-transit vs. highway usage by originating region across three years, directly informing where the city could target public-transit awareness campaigns."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bank Transaction Fraud Detection - End-to-End ML Pipeline",
+      "dates": "",
+      "bullets": [
+        "Developed an end-to-end fraud classification pipeline with XGBoost and a 3-tier flagging system, capturing 28.5% of fraud at an 11% flag rate.",
+        "Improved model performance by experimenting with hyperparameter tuning and optimizing feature engineering techniques."
+      ]
+    },
+    {
+      "title": "Toronto Island Ferry Sales Forecasting",
+      "dates": "",
+      "bullets": [
+        "Implemented an automated forecasting pipeline with Prophet and Airflow, deploying a containerized app on AWS ECS/ECR.",
+        "Enhanced model accuracy by fine-tuning parameters for optimal performance."
+      ]
+    }
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "Git",
+    "Apache Airflow",
+    "Docker",
+    "AWS (S3, ECS, ECR)",
+    "Machine Learning",
+    "Classification",
+    "Anomaly Detection",
+    "Feature Engineering",
+    "Statistical Modeling",
+    "Predictive Modeling",
+    "Power BI",
+    "Streamlit"
+  ],
+  "changelog": "Automated manual reporting workflows and built Power BI dashboards for stakeholder reporting."
+}

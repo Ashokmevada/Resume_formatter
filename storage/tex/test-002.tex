@@ -1,0 +1,123 @@
+%-------------------------
+% Resume in LaTeX - One Page, Helvetica Font
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\raggedright\fontsize{12}{14}\bfseries\scshape
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[1]{\item{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, label={$\bullet$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Ashok Mevada}} \\[6pt]
+    Toronto, ON $|$ +1 437-428-2002 $|$ \href{mailto:ashokmevada18@gmail.com}{ashokmevada18@gmail.com} $|$ \href{https://linkedin.com/in/ashokmevada}{LinkedIn} $|$ \href{https://github.com/Ashokmevada}{GitHub} $|$ \href{https://ashokmevada.online}{Portfolio}
+\end{center}
+
+\begin{center}
+    \small Authorized to work in Canada $|$ Toronto, ON (Hybrid)
+\end{center}
+
+\section*{\MakeUppercase{Summary}}
+Data analytics professional pursuing a Master's in Data Analytics at Northeastern University, with hands-on forecasting experience through independent projects and applied research. Skilled in building automated forecasting pipelines using Prophet and AWS, turning data into actionable insights, and communicating findings to non-technical audiences. Strong Excel analytics background from automating workflows and analyzing transit data.
+
+\section{\MakeUppercase{Experience}}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Data Analytics Intern - Northeastern/City of Toronto Research Partnership}{July 2025 -- January 2026}
+  {Northeastern University (ADISC)}{Toronto, ON}
+\resumeItemListStart
+  \resumeItem{Analyzed public-transit vs. highway usage by originating region (Durham, Halton, Peel, York) across three years to identify where transit adoption lagged, directly informing where the city could target public-transit awareness campaigns.}
+  \resumeItem{Contributed to a research team partnered with the City of Toronto's Transportation Services to analyze mobility patterns (TELUS Insights, 100K+ devices) for major recurring events such as Pride Parade and Caribbean Carnival. Findings were presented to the city's traffic management office and referenced in Northeastern's public research coverage.}
+\resumeItemListEnd
+\resumeSubheading
+  {Global Risk Intelligence and Technology Co-op}{January 2026 -- April 2026}
+  {Manulife}{Toronto, ON}
+\resumeItemListStart
+  \resumeItem{Automated Excel-based workflows using Python (Pandas, OpenPyXL) across 56 files, saving 170-220 hours per week and eliminating repetitive manual effort.}
+  \resumeItem{Recommended a prioritization framework for 80+ candidate automation use cases, ranking by effort-to-impact ratio, and designed a reusable AI agent capability architecture, cutting solution complexity by 75\% across 20 capabilities.}
+  \resumeItem{Authored technical documentation and handover guides to reduce onboarding friction for future contributors.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{\MakeUppercase{Projects}}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{Toronto Island Ferry Sales Forecasting}}{}
+\resumeItemListStart
+  \resumeItem{Built an automated forecasting pipeline using Prophet, Apache Airflow, and DVC to generate demand forecasts for Toronto Island Ferry services.}
+  \resumeItem{Deployed a containerized application on AWS ECS/ECR with CI/CD and designed a Streamlit dashboard to visualize forecasted demand trends.}
+\resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{Bank Transaction Fraud Detection - End-to-End ML Pipeline}}{}
+\resumeItemListStart
+  \resumeItem{Developed a fraud classification pipeline (1M synthetic transactions, 17:1 class imbalance) using XGBoost with a 3-tier flagging system that achieved 28.5\% fraud capture at an 11\% flag rate.}
+  \resumeItem{Used SHAP to identify top fraud drivers and built a multi-page Power BI dashboard with KPI cards, tier-based slicers, and feature-importance views for risk-management style review.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{\MakeUppercase{Skills}}
+\begin{itemize}[leftmargin=0.01in, label={}]
+    \small{\item{Python, SQL, Excel, Git, Apache Airflow, Docker, AWS (S3, ECS, ECR, RDS), Machine Learning, Classification, Anomaly Detection, Feature Engineering, Statistical Modeling, Predictive Modeling, Demand Forecasting, Power BI, Streamlit, SHAP, Data Transformation}}
+\end{itemize}
+
+
+\section{\MakeUppercase{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Northeastern University}{January 2025 -- January 2027}
+  {Master's in Data Analytics}{}
+\resumeSubHeadingListEnd
+
+\end{document}

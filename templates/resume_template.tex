@@ -1,0 +1,137 @@
+%-------------------------
+% Resume in LaTeX - One Page, Helvetica Font
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\raggedright\fontsize{12}{14}\bfseries\scshape
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[1]{\item{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, label={$\bullet$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{\VAR{name}}} \\[6pt]
+    \VAR{contact_line}
+\end{center}
+
+\BLOCK{ if knockout_lines }
+\begin{center}
+    \small \VAR{knockout_lines}
+\end{center}
+\BLOCK{ endif }
+
+\BLOCK{ if summary }
+\section*{\MakeUppercase{Summary}}
+\VAR{summary}
+\BLOCK{ endif }
+
+\BLOCK{ if experience }
+\section{\MakeUppercase{Experience}}
+\resumeSubHeadingListStart
+\BLOCK{ for job in experience }
+\resumeSubheading
+  {\VAR{job.title}}{\VAR{job.dates}}
+  {\VAR{job.company}}{\VAR{job.location}}
+\resumeItemListStart
+\BLOCK{ for bullet in job.bullets }
+  \resumeItem{\VAR{bullet}}
+\BLOCK{ endfor }
+\resumeItemListEnd
+\BLOCK{ endfor }
+\resumeSubHeadingListEnd
+\BLOCK{ endif }
+
+\BLOCK{ if projects }
+\section{\MakeUppercase{Projects}}
+\resumeSubHeadingListStart
+\BLOCK{ for project in projects }
+\resumeProjectHeading
+  {\textbf{\VAR{project.title}}}{\VAR{project.dates}}
+\resumeItemListStart
+\BLOCK{ for bullet in project.bullets }
+  \resumeItem{\VAR{bullet}}
+\BLOCK{ endfor }
+\resumeItemListEnd
+\BLOCK{ endfor }
+\resumeSubHeadingListEnd
+\BLOCK{ endif }
+
+\BLOCK{ if skills }
+\section{\MakeUppercase{Skills}}
+\begin{itemize}[leftmargin=0.01in, label={}]
+    \small{\item{\VAR{skills_line}}}
+\end{itemize}
+\BLOCK{ endif }
+
+\BLOCK{ if certifications }
+\section{\MakeUppercase{Certifications}}
+\resumeSubHeadingListStart
+\BLOCK{ for cert in certifications }
+  \resumeItem{\textbf{\VAR{cert.title}} -- \VAR{cert.company}, \VAR{cert.dates}}
+\BLOCK{ endfor }
+\resumeSubHeadingListEnd
+\BLOCK{ endif }
+
+\BLOCK{ if education }
+\section{\MakeUppercase{Education}}
+\resumeSubHeadingListStart
+\BLOCK{ for edu in education }
+\resumeSubheading
+  {\VAR{edu.school}}{\VAR{edu.dates}}
+  {\VAR{edu.course}}{}
+\BLOCK{ endfor }
+\resumeSubHeadingListEnd
+\BLOCK{ endif }
+
+\end{document}

@@ -1,0 +1,65 @@
+{
+  "summary": "Data analytics professional pursuing a Master's in Data Analytics at Northeastern University, with hands-on forecasting experience through independent projects and applied research. Skilled in building automated forecasting pipelines using Prophet and AWS, turning data into actionable insights, and communicating findings to non-technical audiences. Strong Excel analytics background from automating workflows and analyzing transit data.",
+  "experience": [
+    {
+      "title": "Data Analytics Intern - Northeastern/City of Toronto Research Partnership",
+      "company": "Northeastern University (ADISC)",
+      "location": "Toronto, ON",
+      "dates": "July 2025 -- January 2026",
+      "bullets": [
+        "Analyzed public-transit vs. highway usage by originating region (Durham, Halton, Peel, York) across three years to identify where transit adoption lagged, directly informing where the city could target public-transit awareness campaigns.",
+        "Contributed to a research team partnered with the City of Toronto's Transportation Services to analyze mobility patterns (TELUS Insights, 100K+ devices) for major recurring events such as Pride Parade and Caribbean Carnival. Findings were presented to the city's traffic management office and referenced in Northeastern's public research coverage."
+      ]
+    },
+    {
+      "title": "Global Risk Intelligence and Technology Co-op",
+      "company": "Manulife",
+      "location": "Toronto, ON",
+      "dates": "January 2026 -- April 2026",
+      "bullets": [
+        "Automated Excel-based workflows using Python (Pandas, OpenPyXL) across 56 files, saving 170-220 hours per week and eliminating repetitive manual effort.",
+        "Recommended a prioritization framework for 80+ candidate automation use cases, ranking by effort-to-impact ratio, and designed a reusable AI agent capability architecture, cutting solution complexity by 75% across 20 capabilities.",
+        "Authored technical documentation and handover guides to reduce onboarding friction for future contributors."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Toronto Island Ferry Sales Forecasting",
+      "dates": "",
+      "bullets": [
+        "Built an automated forecasting pipeline using Prophet, Apache Airflow, and DVC to generate demand forecasts for Toronto Island Ferry services.",
+        "Deployed a containerized application on AWS ECS/ECR with CI/CD and designed a Streamlit dashboard to visualize forecasted demand trends."
+      ]
+    },
+    {
+      "title": "Bank Transaction Fraud Detection - End-to-End ML Pipeline",
+      "dates": "",
+      "bullets": [
+        "Developed a fraud classification pipeline (1M synthetic transactions, 17:1 class imbalance) using XGBoost with a 3-tier flagging system that achieved 28.5% fraud capture at an 11% flag rate.",
+        "Used SHAP to identify top fraud drivers and built a multi-page Power BI dashboard with KPI cards, tier-based slicers, and feature-importance views for risk-management style review."
+      ]
+    }
+  ],
+  "skills": [
+    "Python",
+    "SQL",
+    "Excel",
+    "Git",
+    "Apache Airflow",
+    "Docker",
+    "AWS (S3, ECS, ECR, RDS)",
+    "Machine Learning",
+    "Classification",
+    "Anomaly Detection",
+    "Feature Engineering",
+    "Statistical Modeling",
+    "Predictive Modeling",
+    "Demand Forecasting",
+    "Power BI",
+    "Streamlit",
+    "SHAP",
+    "Data Transformation"
+  ],
+  "changelog": "Matched: demand forecasting through project, Excel analytics, turning data into recommendations, predictive modeling, cross-functional communication. Not matched: JDA Software (candidate has no experience with it), direct retail/merchandising experience (candidate's background is in analytics and automation, not retail). Candidate's education (Master's in Data Analytics) meets the degree requirement but is not an undergraduate degree in the preferred fields; this was noted in the summary. Work authorization and location match the job posting."
+}

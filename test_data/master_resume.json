@@ -1,0 +1,75 @@
+{
+  "name": "Ashok Mevada",
+  "contact": {
+    "location": "Toronto, ON",
+    "phone": "+1 437-428-2002",
+    "email": "ashokmevada18@gmail.com"
+  },
+  "links": [
+    {"label": "LinkedIn", "url": "linkedin.com/in/ashokmevada"},
+    {"label": "GitHub", "url": "github.com/Ashokmevada"},
+    {"label": "Portfolio", "url": "ashokmevada.online"}
+  ],
+  "experience": [
+    {
+      "title": "Global Risk Intelligence and Technology Co-op",
+      "company": "Manulife",
+      "location": "Toronto, ON",
+      "dates": "January 2026 -- April 2026",
+      "bullets": [
+        "Recommended a prioritization framework for 80+ candidate automation use cases, ranking by effort-to-impact ratio to determine which initiatives the team built first, and designed a reusable AI agent capability architecture, breaking down business pain points (e.g., meeting-insights capture) into modular, shareable capabilities like transcript retrieval, extraction of dates/decisions/owners, and structured output formatting, that could be recombined across agents, cutting solution complexity by 75% across 20 capabilities.",
+        "Automated Excel-based workflows using Python (Pandas, OpenPyXL) across 56 files, saving 170-220 hours per week and eliminating repetitive manual effort.",
+        "Authored technical documentation and handover guides to reduce onboarding friction for future contributors."
+      ],
+      "other_info": null
+    },
+    {
+      "title": "Data Analytics Intern - Northeastern/City of Toronto Research Partnership",
+      "company": "Northeastern University (ADISC)",
+      "location": "Toronto, ON",
+      "dates": "July 2025 -- January 2026",
+      "bullets": [
+        "Contributed to a Northeastern research team partnered with the City of Toronto's Transportation Services to analyze mobility patterns (TELUS Insights, 100K+ devices) for major recurring events (Pride Parade, Caribbean Carnival), findings were presented to the city's traffic management office and referenced in Northeastern's public research coverage.",
+        "Analyzed public-transit vs. highway usage by originating region (Durham, Halton, Peel, York) across three years to identify where transit adoption lagged, directly informing where the city could target public-transit awareness campaigns.",
+        "Built Python/SQL data pipelines and Power BI/Matplotlib/Plotly visualizations to communicate multi-year attendance and mode-share trends to a non-technical municipal audience."
+      ],
+      "other_info": null
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bank Transaction Fraud Detection - End-to-End ML Pipeline",
+      "company": null,
+      "dates": null,
+      "bullets": [
+        "Built an end-to-end fraud classification pipeline (1M synthetic transactions, 17:1 class imbalance); weighed a SQL rule-based baseline (26.2% fraud capture) against ML approaches, selecting XGBoost with a 3-tier flagging system (28.5% capture at 11% flag rate) to balance fraud capture against customer friction.",
+        "Used SHAP to identify top fraud drivers and built a multi-page Power BI dashboard (KPI cards, tier-based slicers, feature-importance views) for risk-management style review."
+      ],
+      "other_info": "Personal project"
+    },
+    {
+      "title": "Toronto Island Ferry Sales Forecasting",
+      "company": null,
+      "dates": null,
+      "bullets": [
+        "Built an automated forecasting pipeline (Prophet, Airflow, DVC) and deployed a containerized app on AWS ECS/ECR with CI/CD; designed a Streamlit dashboard to visualize forecasted demand trends."
+      ],
+      "other_info": "Independent project"
+    }
+  ],
+  "certifications": [],
+  "skills": [
+    "Python", "SQL", "Git", "Apache Airflow", "Docker",
+    "AWS (S3, ECS, ECR, RDS)", "Machine Learning", "Classification",
+    "Anomaly Detection", "Feature Engineering", "Statistical Modeling",
+    "Predictive Modeling", "Power BI", "Streamlit", "SHAP", "Data Transformation"
+  ],
+  "languages": ["English"],
+  "education": [
+    {
+      "school": "Northeastern University",
+      "course": "Master's in Data Analytics",
+      "dates": "January 2025 -- January 2027"
+    }
+  ]
+}
